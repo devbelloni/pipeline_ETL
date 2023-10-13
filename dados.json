@@ -1,0 +1,30 @@
+{
+    "id": 3687,
+    "name": "Ana",
+    "account": {
+        "id": 3922,
+        "number": "00123-8",
+        "agency": "0321",
+        "balance": 0.0,
+        "limit": 1000.0
+    },
+    "card": {
+        "id": 3579,
+        "number": "**** **** 7654 4321",
+        "limit": 1000.0
+    },
+    "features": [
+        {
+            "id": 1158,
+            "icon": "string",
+            "description": "string"
+        }
+    ],
+    "news": [
+        {
+            "id": 7397,
+            "icon": "string",
+            "description": "string"
+        }
+    ]
+}
