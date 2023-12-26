@@ -6,7 +6,8 @@
         "number": "00123-8",
         "agency": "0321",
         "balance": 0.0,
-        "limit": 1000.0
+        "limit": 10000.0,
+        "perfil": ""
     },
     "card": {
         "id": 3579,
@@ -23,7 +24,7 @@
     "news": [
         {
             "id": 7397,
-            "icon": "string",
+            "title": "string",
             "description": "string"
         }
     ]

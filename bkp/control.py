@@ -1,3 +1,19 @@
+from openai import OpenAI
+auth = "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"
+client = OpenAI()
+
+completion = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "Hello!"}
+  ],
+)
+
+print(completion.choices[0].message)
+
+
+'''
 import requests as req
 import json as js
 import pandas as pd
@@ -7,8 +23,8 @@ import openai as gpt
 url = 'https://sdw-2023-prd.up.railway.app/users'
 df = pd.read_csv('SDW2023.csv')
 user_ids = df['UserId'].tolist()
-
-
+'''
+'''
 def get_user(id):
     response = req.get(f'{url}/{id}')
     if response.status_code == 200:
@@ -46,7 +62,7 @@ def generate_ai_news(user):
 users = [user for id in user_ids if (user := get_user(id))is not None]
 
 
-gpt.api_key = "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"
+gpt.api_key = "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"
 
 
 for user in users:
@@ -59,3 +75,4 @@ for user in users:
 
     success = update_user(user)
     print(f"User {user['name']} updated? {success}!")
+'''
